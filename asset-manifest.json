@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/purple-audience/static/css/main.83257f7a.css",
-    "main.js": "/purple-audience/static/js/main.1b275778.js",
-    "static/media/home.png": "/purple-audience/static/media/home.851d175288fd55f73502.png",
-    "static/media/med.svg": "/purple-audience/static/media/med.f46b3840bd8ced560e7d.svg",
-    "index.html": "/purple-audience/index.html",
-    "main.83257f7a.css.map": "/purple-audience/static/css/main.83257f7a.css.map",
-    "main.1b275778.js.map": "/purple-audience/static/js/main.1b275778.js.map"
+    "main.css": "/static/css/main.8c5010c4.css",
+    "main.js": "/static/js/main.1b275778.js",
+    "static/media/home.png": "/static/media/home.851d175288fd55f73502.png",
+    "static/media/med.svg": "/static/media/med.f46b3840bd8ced560e7d.svg",
+    "index.html": "/index.html",
+    "main.8c5010c4.css.map": "/static/css/main.8c5010c4.css.map",
+    "main.1b275778.js.map": "/static/js/main.1b275778.js.map"
   },
   "entrypoints": [
-    "static/css/main.83257f7a.css",
+    "static/css/main.8c5010c4.css",
     "static/js/main.1b275778.js"
   ]
 }
