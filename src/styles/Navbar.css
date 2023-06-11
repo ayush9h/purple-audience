@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --background-color: white;
+  --text-color: black;
+  --button-color: rgb(101, 9, 239);
+  --textbutton-color: white;
+  --web-font: "Josefin Sans", sans-serif;
+}
+body {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar {
+  height: 6rem;
+  position: relative;
+}
+
+.logo h1 {
+  font-size: 3rem;
+  font-family: var(--web-font);
+  font-weight: bolder;
+  margin-left: 2rem;
+}
+.logo h1 span {
+  font-size: 3rem;
+}
+.menu-icon {
+  display: none;
+  padding-right: 2rem;
+}
+.line {
+  position: absolute;
+  height: 0.2rem;
+  width: 2rem;
+  left: 85%;
+  margin-top: 1rem;
+  transition: 0.5s;
+  background-color: var(--text-color);
+}
+
+.line:nth-child(1) {
+  top: 1.1rem;
+}
+.line:nth-child(2) {
+  top: 1.8rem;
+}
+.line:nth-child(3) {
+  top: 2.5rem;
+}
+.nav-elements ul {
+  display: flex;
+  list-style-type: none;
+  font-family: var(--web-font);
+}
+
+.nav-elements a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-right: 4rem;
+}
+
+.get-started a {
+  background-color: var(--button-color);
+  color: var(--textbutton-color);
+  padding: 1rem 3rem;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+  .nav-elements ul li:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 1315px) {
+  .menu-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-elements {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    background-color: rgb(235, 205, 255);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 4;
+  }
+  .nav-elements.active {
+    left: 0;
+  }
+  .nav-elements ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-elements ul li {
+    margin: 4rem 1.2rem;
+  }
+  .nav-elements ul li a {
+    margin: 2rem;
+  }
+  .navbar .logo h1,
+  .navbar .logo span {
+    font-size: 2rem;
+  }
+}

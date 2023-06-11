@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+:root {
+  --background-color: white;
+  --text-color: black;
+  --button-color: #6509ef;
+  --textbutton-color: white;
+  --web-font: "Josefin Sans", sans-serif;
+}
+body {
+  font-size: 62.5%;
+}
+.testimonial-slider {
+  margin: 4rem auto;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+}
+
+.testimonial {
+  border: 0.08rem solid black;
+  margin-bottom: 1rem;
+  padding: 5rem 2rem;
+  background-color: #e0cefc;
+  border-radius: 1rem;
+}
+.testimonial-text {
+  font-size: 1.5rem;
+  font-family: var(--web-font);
+  margin-bottom: 2rem;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-style: italic;
+  font-family: var(--web-font);
+  font-weight: bold;
+}
+
+.testimonial-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.next-btn {
+  position: absolute;
+  border: none;
+  background: #6e1eff;
+  color: white;
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+  font-family: var(--web-font);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .testimonial-slider {
+    max-width: 100%;
+  }
+  .prev-btn {
+    top: 110%;
+  }
+  .testimonial-text {
+    font-size: 1rem;
+  }
+  .next-btn {
+    position: absolute;
+  }
+}
