@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/purple-audience/static/css/main.de258ebd.css",
-    "main.js": "/purple-audience/static/js/main.433b976f.js",
+    "main.css": "/purple-audience/static/css/main.1bc4962f.css",
+    "main.js": "/purple-audience/static/js/main.b49f1754.js",
     "static/media/med.svg": "/purple-audience/static/media/med.f46b3840bd8ced560e7d.svg",
     "index.html": "/purple-audience/index.html",
-    "main.de258ebd.css.map": "/purple-audience/static/css/main.de258ebd.css.map",
-    "main.433b976f.js.map": "/purple-audience/static/js/main.433b976f.js.map"
+    "main.1bc4962f.css.map": "/purple-audience/static/css/main.1bc4962f.css.map",
+    "main.b49f1754.js.map": "/purple-audience/static/js/main.b49f1754.js.map"
   },
   "entrypoints": [
-    "static/css/main.de258ebd.css",
-    "static/js/main.433b976f.js"
+    "static/css/main.1bc4962f.css",
+    "static/js/main.b49f1754.js"
   ]
 }
