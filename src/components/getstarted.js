@@ -8,14 +8,15 @@ const TwoColumnGrid = () => {
   const [city,setCity] = useState('')
   const [address,setAddress] = useState('')
   const [phone,setPhone] = useState('')
+  const [message, setMessage] = useState('');
 
   let submit = async(e)=>{
     e.preventDefault()
 
     try{
-      alert("Form Submitted")
-      await axios.post("http://localhost:3000/",
+      const response = await axios.post("http://localhost:3000/",
         {name, city, address, phone});
+        setMessage(response.data.message);
     }
     catch(e){
       console.log(e)
@@ -61,6 +62,8 @@ const TwoColumnGrid = () => {
             <label htmlFor="phone">Phone</label>
             <input type="tel" id="phone" placeholder="Enter your phone number" onChange={(e)=>{setPhone(e.target.value)}}/>
           </div>
+          {message && <p className='form-message'>{message}</p>}
+
           <button type="submit" onClick={submit}>SUBMIT</button>
         </form>
       </div>

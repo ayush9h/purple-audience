@@ -8,17 +8,14 @@ const events = [
     {
       title: "Mental Health Awareness Workshop",
       description: "A mental health awareness workshop is an educational session designed to increase understanding and knowledge about mental health issues. It aims to promote awareness, reduce stigma, and provide practical tools and strategies to support mental well-being.",
-      countdown: "10 days left for Registration",
     },
     {
       title: "Breathing Meditation Workshop",
       description: "A breathing meditation workshop is a session focused on teaching and practicing different techniques of mindful breathing for relaxation, stress reduction, and promoting overall well-being. It aims to guide participants in harnessing the power of their breath to cultivate mindfulness, calmness, and inner peace.",
-      countdown: "15 days left for Registration",
     },
     {
       title: "Journey to Center of Mind",
       description: "A metaphorical concept that represents an inner exploration and introspective journey into one's own mind, thoughts, and consciousness. It signifies the process of delving deep within oneself to gain a deeper understanding of one's thoughts, emotions, beliefs, and inner experiences.",
-      countdown: "20 days left for Registration",
     },
   ];
   
@@ -27,11 +24,12 @@ const events = [
       <div className="card">
         <div className="card-details">
           <h2>{event.title}</h2>
-          <p>{event.description}</p>
+          <p className="event_desc">{event.description}</p>
+          <p className="event_info"><span>Location: </span>Connaught Place, Delhi NCR, India</p>
+          <p className="event_info"><span>Time: </span>11:00 am to 13:00 pm</p>
           <div className="countdown">
-            <span>{event.countdown}</span>
+            <span>No Registration is required.</span>
           </div>
-          <button>REGISTER</button>
         </div>
       </div>
     );
@@ -43,7 +41,7 @@ const events = [
             <Navbar/>
         <div className="card-container">
         <div className="max-width">
-        <h1><span>UPCOMING</span> EVENTS - 2023</h1>
+        <h1 className="upcoming-events"><span>UPCOMING</span> EVENTS - 2023</h1>
         {events.map((event, index) => (
           <EventCard event={event} key={index} />
         ))}

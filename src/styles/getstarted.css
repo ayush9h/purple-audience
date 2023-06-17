@@ -83,7 +83,12 @@ h3 {
 .form-group {
   margin-bottom: 1.5rem;
 }
-
+.form-message {
+  font-size: 1.2rem;
+  color: var(--button-color);
+  font-family: var(--web-font);
+  padding: 0.5rem;
+}
 label {
   display: block;
   font-weight: bold;
