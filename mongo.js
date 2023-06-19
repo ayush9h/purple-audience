@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-mongoose.connect("mongodb://localhost:27017/")
+mongoose.connect("mongodb+srv://ayushkumarlfs2:4QbplpUaQMHuYKaV@cluster0.upavfik.mongodb.net/test?retryWrites=true&w=majority")
 .then(()=>{
     console.log("connected")
 })
@@ -27,6 +27,9 @@ const newSchema = new mongoose.Schema({
     }
 
 })
+
+const collection = mongoose.model("collection",newSchema)
+module.exports = collection; 
 
 const collection = mongoose.model("collection",newSchema)
 module.exports = collection; 
