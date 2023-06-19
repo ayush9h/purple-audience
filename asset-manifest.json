@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/purple-audience/static/css/main.fe46aa73.css",
-    "main.js": "/purple-audience/static/js/main.d2c42f40.js",
+    "main.js": "/purple-audience/static/js/main.28208e9b.js",
     "static/media/home.svg": "/purple-audience/static/media/home.72a127f0822dda0d5b28.svg",
     "static/media/med.svg": "/purple-audience/static/media/med.f46b3840bd8ced560e7d.svg",
     "index.html": "/purple-audience/index.html",
     "main.fe46aa73.css.map": "/purple-audience/static/css/main.fe46aa73.css.map",
-    "main.d2c42f40.js.map": "/purple-audience/static/js/main.d2c42f40.js.map"
+    "main.28208e9b.js.map": "/purple-audience/static/js/main.28208e9b.js.map"
   },
   "entrypoints": [
     "static/css/main.fe46aa73.css",
-    "static/js/main.d2c42f40.js"
+    "static/js/main.28208e9b.js"
   ]
 }
