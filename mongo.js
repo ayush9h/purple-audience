@@ -30,6 +30,3 @@ const newSchema = new mongoose.Schema({
 
 const collection = mongoose.model("collection",newSchema)
 module.exports = collection; 
-
-const collection = mongoose.model("collection",newSchema)
-module.exports = collection; 

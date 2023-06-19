@@ -1,7 +1,6 @@
 const express = require("express")
 const collection = require("./mongo")
 const cors = require("cors")
-const { Collection } = require("mongoose")
 const app = express()
 
 app.use(express.json())
