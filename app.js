@@ -10,7 +10,7 @@ app.get("/",cors(),(req,res)=>{
 
 })
 
-app.post("/",async(req,res)=>{
+app.post("https://ap-south-1.aws.data.mongodb-api.com/app/64913f68b4552e32900a2c59/endpoint/data/v1",async(req,res)=>{
     const {name,city,address,phone} = req.body
 
     const existingEntry = await collection.findOne({phone:phone})
@@ -28,8 +28,4 @@ app.post("/",async(req,res)=>{
     await collection.insertMany([data])
     res.status(200).json({ message: "Thank You for Joining. We will contact you shortly." });
 
-})
-
-app.listen(3000,()=>{
-    console.log("port connected")
 })

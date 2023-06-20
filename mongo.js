@@ -1,10 +1,10 @@
 const mongoose = require("mongoose")
 mongoose.connect("mongodb+srv://ayushkumarlfs2:4QbplpUaQMHuYKaV@cluster0.upavfik.mongodb.net/test?retryWrites=true&w=majority")
 .then(()=>{
-    console.log("connected")
+    console.log("Successfully connected to MongoDB Server")
 })
 .catch(()=>{
-    console.log("fail")
+    console.log("Failed to connect to MongoDB Server")
 })
 
 const newSchema = new mongoose.Schema({
@@ -30,3 +30,4 @@ const newSchema = new mongoose.Schema({
 
 const collection = mongoose.model("collection",newSchema)
 module.exports = collection; 
+

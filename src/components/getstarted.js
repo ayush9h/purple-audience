@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import '../styles/getstarted.css';
 import axios from 'axios';
 
+
+
 const TwoColumnGrid = () => {
 
   const [name,setName] = useState('')
@@ -14,7 +16,7 @@ const TwoColumnGrid = () => {
     e.preventDefault()
 
     try{
-      const response = await axios.post("http://localhost:3000/",
+      const response = await axios.post("https://ap-south-1.aws.data.mongodb-api.com/app/64913f68b4552e32900a2c59/endpoint/data/v1",
         {name, city, address, phone});
         setMessage(response.data.message);
     }
