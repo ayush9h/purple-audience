@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,8 @@
   --text-color: black;
   --button-color: #6509ef;
   --textbutton-color: white;
-  --web-font: "Josefin Sans", sans-serif;
+  --header-font: "Bebas Neue", sans-serif;
+  --text-font: "Montserrat", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -25,21 +26,21 @@ body {
 .testimonial {
   border: 0.2rem solid black;
   box-shadow: 0.5rem 0.5rem 0 var(--button-color);
-  margin-bottom: 1rem;
   padding: 5rem 2rem;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 0.2rem;
 }
 .testimonial-text {
-  font-size: 1.5rem;
-  font-family: var(--web-font);
+  font-size: 1.2rem;
+  font-family: var(--text-font);
+  font-weight: bold;
   margin-bottom: 2rem;
 }
 
 .testimonial-author {
   font-size: 1rem;
   font-style: italic;
-  font-family: var(--web-font);
+  font-family: var(--text-font);
   font-weight: bold;
 }
 
@@ -52,11 +53,12 @@ body {
 .next-btn {
   position: absolute;
   border: none;
-  background: #6e1eff;
-  color: white;
+  background: var(--button-color);
+  color: var(--background-color);
   padding: 1rem 5rem;
   font-size: 1.2rem;
-  font-family: var(--web-font);
+  font-family: var(--text-font);
+  font-weight: bold;
   cursor: pointer;
   transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }

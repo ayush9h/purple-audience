@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +11,8 @@
   --text-color: black;
   --button-color: #6509ef;
   --textbutton-color: white;
-  --body-font: "Josefin Sans", sans-serif;
+  --header-font: "Bebas Neue", sans-serif;
+  --text-font: "Montserrat", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -26,10 +27,10 @@ body {
   margin-top: 20rem;
   text-align: center;
   margin-bottom: 10rem;
-  font-family: var(--body-font);
+  font-family: var(--header-font);
 }
 .card-container h1 span {
-  font-family: var(--body-font);
+  font-family: var(--header-font);
 }
 .card {
   width: 100%;
@@ -37,7 +38,7 @@ body {
   flex-direction: column;
   border: 0.2rem solid black;
   box-shadow: 0.5rem 0.5rem 0 var(--button-color);
-  border-radius: 1rem;
+  border-radius: 0.2rem;
   margin-bottom: 5rem;
   text-align: center;
   align-items: center;
@@ -54,21 +55,24 @@ body {
 
 .card-details h2 {
   font-size: 2.5rem;
-  font-family: var(--body-font);
+  font-family: var(--text-font);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .card-details .event_desc {
   margin-bottom: 2rem;
   font-size: 1rem;
-  font-family: var(--body-font);
+  font-family: var(--text-font);
+  font-weight: bold;
 }
 
 .card-details .event_info {
   margin-bottom: 2rem;
   font-size: 1rem;
-  font-family: var(--body-font);
+  font-family: var(--text-font);
+  font-weight: bold;
 }
 
 .countdown {
@@ -79,7 +83,8 @@ body {
 .countdown span {
   color: var(--button-color);
   font-size: 1.5rem;
-  font-family: var(--body-font);
+  font-family: var(--text-font);
+  font-weight: bold;
 }
 @media screen and (max-width: 768px) {
   .card-container h1 {

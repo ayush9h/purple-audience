@@ -1,5 +1,6 @@
 import { useState} from 'react'
 import { NavLink } from 'react-router-dom'
+import {motion} from 'framer-motion'
 import '../styles/Navbar.css'
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
@@ -23,14 +24,14 @@ const Navbar = () => {
               <NavLink to="/">Home</NavLink>
             </li>
             <li className='meditation navbar-item'>
-              <NavLink to="/meditation">Meditation Corner</NavLink>
+              <NavLink to="/meditation">Meditation</NavLink>
             </li>
             <li className='events navbar-item'>
               <NavLink to="/events">Upcoming Events</NavLink>
             </li>
-            <li className='get-started navbar-item'>
+            <motion.li whileHover = {{scale:0.95}} transition = {{type:"keyframes",stiffness:100}} className='get-started navbar-item'>
               <a href='#getstarted'>Get Started</a>
-            </li>
+            </motion.li>
           </ul>
         </div>
       </div>

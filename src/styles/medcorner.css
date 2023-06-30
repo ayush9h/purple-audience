@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-snap-type: proximity;
 }
 :root {
   --background-color: white;
   --text-color: black;
   --button-color: #6509ef;
   --textbutton-color: white;
-  --body-font: "Josefin Sans", sans-serif;
+  --header-font: "Bebas Neue", sans-serif;
+  --text-font: "Montserrat", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -22,42 +22,89 @@ body {
 }
 .medcorner-container {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
+  position: relative;
   background-image: url("../img/med.svg");
   background-size: cover;
+  background-repeat: no-repeat;
 }
+
 .medcorner-container h1 {
+  font-size: 6rem;
+  font-family: var(--header-font);
+  line-height: 7rem;
   position: absolute;
-  top: 40%;
-  left: 5%;
-  font-size: 5rem;
-  font-family: var(--web-font);
-  line-height: 6rem;
+  top: 30%;
 }
-span {
-  color: var(--button-color);
-}
-
 .medcorner-container p {
+  font-size: 1.2rem;
+  font-family: var(--text-font);
+  font-weight: bold;
   position: absolute;
-  top: 65%;
-  left: 5%;
-  font-size: 1.5rem;
-  font-family: var(--web-font);
-}
-.types-of-meditating {
-  margin-top: 15rem;
-  width: 100%;
-  position: relative;
-}
-.types-of-meditating h1 {
-  font-size: 4rem;
-  font-family: var(--web-font);
+  text-align: justify;
+  top: 50%;
 }
 
-@media screen and (max-width: 768px) {
-  .medcorner-container h1,
-  .types-of-meditating h1 {
-    font-size: 2rem;
+.medmusic-guide {
+  margin-top: 5rem;
+  width: 100%;
+}
+.medmusic-guide h1 {
+  font-size: 6rem;
+  font-family: var(--header-font);
+}
+.medmusic-guide p {
+  font-size: 1.2rem;
+  font-family: var(--text-font);
+  font-weight: bold;
+}
+
+.component {
+  background-color: var(--background-color);
+  width: 100%;
+  max-width: 50rem;
+  margin: 4rem auto;
+  padding: 2.5rem;
+  border: 0.2rem solid var(--text-color);
+  box-shadow: 0.5rem 0.5rem 0rem var(--button-color);
+  border-radius: 0.2rem;
+}
+.title {
+  font-size: 3rem;
+  font-family: var(--header-font);
+}
+.subTitle {
+  color: #4f4f4f;
+  font-size: 1rem;
+  font-family: var(--text-font);
+  font-weight: bold;
+  margin-top: -3rem;
+}
+
+.playButton {
+  background: none;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.time {
+  margin: 0rem auto;
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: #828282;
+  font-family: var(--text-font);
+  font-size: 1rem;
+}
+
+.timeline {
+  width: 100%;
+}
+
+@media (max-width: 900px) {
+  .component {
+    width: 50%;
   }
 }

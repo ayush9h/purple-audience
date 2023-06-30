@@ -15,6 +15,7 @@ const App = () => {
         <div className='max-width'>
           <h1 className='home-title-one'><span>Empower</span> Your Mind</h1>
           <h1 className='home-title-two'>Purple Audience is <span>Here.</span></h1>
+          <a className='know-more' href='#about'> Know More</a>
         </div>
     </div>
 
@@ -34,8 +35,10 @@ const App = () => {
         </div>
       </div>
         {/******** Team Container *******/}
+        <div className='max-width'>
         <div className='team-container'>
           <h1>Meet our <span>Amazing</span> Team</h1>
+        </div>
           <ProfileCards/>
         </div>
 

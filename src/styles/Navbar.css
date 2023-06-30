@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +9,8 @@
   --text-color: black;
   --button-color: rgb(101, 9, 239);
   --textbutton-color: white;
-  --web-font: "Josefin Sans", sans-serif;
+  --header-font: "Bebas Neue", sans-serif;
+  --text-font: "Montserrat", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -29,7 +30,7 @@ body {
 
 .logo h1 {
   font-size: 3rem;
-  font-family: var(--web-font);
+  font-family: var(--header-font);
   font-weight: bolder;
   margin-left: 2rem;
 }
@@ -62,7 +63,8 @@ body {
 .nav-elements ul {
   display: flex;
   list-style-type: none;
-  font-family: var(--web-font);
+  font-family: var(--text-font);
+  font-weight: bold;
 }
 
 .nav-elements a {
