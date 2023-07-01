@@ -40,8 +40,11 @@ const events = [
         <div>
             <Navbar/>
         <div className="card-container">
-        <div className="max-width">
-        <h1 className="upcoming-events"><span>UPCOMING</span> EVENTS - 2023</h1>
+          <div className="max-width">
+            <div className="event-title">
+              
+            <h1 className="upcoming-events"><span>UPCOMING</span> EVENTS - 2K23</h1>
+            </div>
         {events.map((event, index) => (
           <EventCard event={event} key={index} />
         ))}

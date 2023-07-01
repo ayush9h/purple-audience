@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-snap-type: proximity;
 }
 :root {
   --background-color: white;
@@ -21,16 +20,19 @@ body {
   width: min(320ch, 100% - 4rem);
   margin-inline: auto;
 }
-
-.card-container h1 {
-  font-size: 5rem;
-  margin-top: 20rem;
-  text-align: center;
-  margin-bottom: 10rem;
-  font-family: var(--header-font);
+.event-title {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card-container h1 span {
+.event-title h1 {
+  padding: 2rem 0rem;
+  font-size: 6rem;
   font-family: var(--header-font);
+  border-top: 0.3rem solid var(--button-color);
+  border-bottom: 0.3rem solid var(--button-color);
 }
 .card {
   width: 100%;
@@ -55,7 +57,7 @@ body {
 
 .card-details h2 {
   font-size: 2.5rem;
-  font-family: var(--text-font);
+  font-family: var(--header-font);
   margin-bottom: 1.5rem;
   text-transform: uppercase;
   font-weight: bold;

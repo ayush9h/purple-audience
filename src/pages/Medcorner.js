@@ -4,7 +4,8 @@ import Footer from "../components/footer";
 import '../styles/medcorner.css';
 import useSound from "use-sound";
 import med from "../assets/med.mp3"
-import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; // icons for play and pause
+import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai"; 
+import {FaArrowCircleRight} from "react-icons/fa"
 import { IconContext } from "react-icons";
 import {useEffect, useState } from "react";
 
@@ -118,6 +119,55 @@ const Medcorner = () =>{
                           </button>
                          
                     </div>
+              </div>
+
+
+                <div className="blog-container">
+                  <h1>Latest <span>Articles</span></h1>
+                  <div className="blog-cardholder">
+                          <div className="medcard">
+                            <h3>01. What is Meditation</h3>
+                            <p>Learn about meditation by our certified experts.</p>
+                            <IconContext.Provider value={{ size: "2rem", color: "#6509ef"}} clas>
+                                <FaArrowCircleRight />
+                              </IconContext.Provider>
+                          </div>
+                          <div className="medcard">
+                          <h3>02. Why is it necessary</h3>
+                            <p>Learn about the benefits of the meditation by our certified gurus.</p>
+                            <IconContext.Provider value={{ size: "2rem", color: "#6509ef"}} clas>
+                                <FaArrowCircleRight />
+                              </IconContext.Provider>
+                          </div>
+                          <div className="medcard">
+                          <h3>03. Maintain Your Routine</h3>
+                            <p>Learn about why a good routine is important.</p>
+                            <IconContext.Provider value={{ size: "2rem", color: "#6509ef"}} clas>
+                                <FaArrowCircleRight />
+                              </IconContext.Provider>
+                          </div>
+                          <div className="medcard">
+                          <h3>04. Balance Life and Job</h3>
+                            <p>How to Balance Life and Job simultaneously.</p>
+                            <IconContext.Provider value={{ size: "2rem", color: "#6509ef"}} clas>
+                                <FaArrowCircleRight />
+                              </IconContext.Provider>
+                          </div>
+                          <div className="medcard">
+                          <h3>05. Implement Good Habits</h3>
+                            <p>How to get rid of bad habits and develop good ones.</p>
+                            <IconContext.Provider value={{ size: "2rem", color: "#6509ef"}} clas>
+                                <FaArrowCircleRight />
+                              </IconContext.Provider>
+                          </div>
+                          <div className="medcard">
+                          <h3>06. Time Management</h3>
+                            <p>Why is it important and how to do it?</p>
+                            <IconContext.Provider value={{ size: "2rem", color: "#6509ef"}} clas>
+                                <FaArrowCircleRight />
+                              </IconContext.Provider>
+                          </div>
+                  </div>
                 </div>
             </div>
         </div>           
