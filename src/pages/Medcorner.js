@@ -60,8 +60,8 @@ const Medcorner = () =>{
             <div className="medcorner-container">
                 <div className="max-width">
                     <h1><span>Meditation.</span></h1>
-                    <p>Journey from sound to silence, from movement to stillness, from chaos to peace. <br></br>
-                    Give yourself a boost of happiness and calmness.<br></br>Meditation encompasses both a valuable skill and a transformative experience,<br></br> offering profound benefits for your well-being and cultivating a greater sense of joy<br></br> and contentment in life.</p>
+                    <p>Journey from <span>sound to silence</span>, from <span>movement to stillness</span>, from <span>chaos to peace.</span> <br></br>
+                    Give yourself a boost of happiness and calmness.<br></br>Meditation encompasses both a <span>valuable skill</span> and a <span>transformative experience,</span><br></br> offering profound benefits for your well-being and cultivating a greater sense of joy<br></br> and <span>contentment in life.</span></p>
                 </div>
             </div>
             

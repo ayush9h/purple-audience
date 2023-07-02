@@ -20,12 +20,24 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100%;
+  margin-top: 1rem;
 }
 
 .navbar {
-  height: 6rem;
+  height: 9rem;
   position: relative;
+}
+
+.ad-container {
+  width: 100%;
+  background-color: var(--button-color);
+}
+.ad-container h1 {
+  text-align: center;
+  font-size: 1rem;
+  font-family: var(--text-font);
+  color: var(--textbutton-color);
+  padding: 1rem;
 }
 
 .logo h1 {
@@ -46,7 +58,7 @@ body {
   height: 0.2rem;
   width: 2rem;
   left: 85%;
-  margin-top: 1rem;
+  margin-top: 3.2rem;
   transition: 0.5s;
   background-color: var(--text-color);
 }

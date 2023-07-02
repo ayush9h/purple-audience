@@ -8,7 +8,11 @@ const Navbar = () => {
     setShowNavbar(!showNavbar)
   }
   return (
+
     <nav className="navbar">
+          <div className='ad-container'>
+            <h1>Join our community and be the change.</h1>
+          </div>
       <div className="container">
         <div className="logo">
             <h1><span>PURPLE </span> AUDIENCE</h1>

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,42 +9,168 @@
   --text-color: black;
   --button-color: #6509ef;
   --textbutton-color: white;
-  --web-font: "Josefin Sans", sans-serif;
+  --header-font: "Bebas Neue", sans-serif;
+  --text-font: "Montserrat", sans-serif;
 }
 body {
   font-size: 62.5%;
 }
-.footer {
-  margin-top: 15rem;
-  background-color: var(--button-color);
-  padding: 2rem;
-  text-align: center;
+
+footer {
+  bottom: 0;
 }
 
-.social-links {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2rem;
+.footer-distributed {
+  background-color: azure;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  padding: 3rem 3rem 3rem 3rem;
+  margin-top: 8rem;
 }
 
-.social-link {
-  color: var(--background-color);
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  width: 30%;
+}
+
+.footer-distributed h3 {
+  color: var(--text-color);
+  font-family: var(--header-font);
+  font-size: 2rem;
+  margin: 0;
+}
+
+.footer-distributed h3 span {
+  color: var(--button-color);
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 2rem 0 1.2rem;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 1rem;
+  font-family: var(--text-font);
+  margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center {
+  width: 35%;
+}
+
+.footer-distributed .footer-center i {
+  color: var(--text-color);
   font-size: 1.5rem;
-  margin: 0 2rem;
+  width: 2rem;
+  height: 4rem;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4.2rem;
+  margin: 0rem 2rem;
+  vertical-align: middle;
 }
 
-.copy-text {
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 1.5rem;
+}
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: var(--text-font);
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer-distributed .footer-center p a {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  width: 30%;
+}
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  font-size: 1.4rem;
+  font-family: var(--text-font);
+  margin: 0;
+  text-align: justify;
+}
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons {
+  margin-top: 1rem;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 50%;
   font-size: 1.2rem;
-  font-family: var(--web-font);
-  color: var(--textbutton-color);
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.6rem;
+  margin-right: 1rem;
 }
 
-@media (max-width: 768px) {
-  .social-links {
-    flex-wrap: wrap;
+.footer-distributed .footer-icons a:hover {
+  background-color: var(--button-color);
+}
+@media screen and (max-width: 880px) {
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
   }
-
-  .social-link {
-    margin: 0.5rem;
+  .footer-distributed .footer-center i {
+    margin-left: 0;
   }
 }
