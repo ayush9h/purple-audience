@@ -1,12 +1,19 @@
-import { useState} from 'react'
+import { useState,useLayoutEffect} from 'react'
 import { NavLink } from 'react-router-dom'
-import {motion} from 'framer-motion'
+import {delay, motion} from 'framer-motion'
 import '../styles/Navbar.css'
+import { gsap } from 'gsap'
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false)
   const handleShowNavbar = () => {
     setShowNavbar(!showNavbar)
   }
+
+  useLayoutEffect(()=>{
+    gsap.from(".ad-container",{duration:0.5,opacity:0})
+    gsap.from(".navbar .logo",{duration:0.5,opacity:0, x:-40})
+    gsap.from(".navbar ul li",{duration:0.5,opacity:0, x:-10, delay:0.5,stagger:{amount:0.1}})
+  })
   return (
 
     <nav className="navbar">

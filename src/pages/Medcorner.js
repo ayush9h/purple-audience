@@ -8,6 +8,11 @@ import { AiFillPlayCircle, AiFillPauseCircle } from "react-icons/ai";
 import {FaArrowCircleRight} from "react-icons/fa"
 import { IconContext } from "react-icons";
 import {useEffect, useState } from "react";
+import { gsap } from 'gsap';
+import { useLayoutEffect } from 'react';
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 const Medcorner = () =>{
 

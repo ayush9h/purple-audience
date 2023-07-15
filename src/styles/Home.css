@@ -1,19 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   user-select: none;
-  cursor: pointer;
 }
 :root {
-  --background-color: #ffe9b1;
-  --text-color: black;
-  --button-color: #7743db;
-  --textbutton-color: white;
-  --header-font: "Bebas Neue", sans-serif;
-  --text-font: "Montserrat", sans-serif;
+  --bg-color: #ffffff;
+  --primary-color: #6509ef;
+  --secondary-color: #ddb0ff;
+  --primarytext-color: #1f1f1f;
+  --secondarytext-color: #faefd9;
+  --font-primary: "Merriweather Sans", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -23,47 +22,59 @@ body {
   margin-inline: auto;
 }
 .home-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  height: 110vh;
   background-image: url("../img/home.svg");
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 85vh;
 }
-.home-title-one,
+.home-title-one {
+  position: absolute;
+  top: 35%;
+  font-size: 4rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+}
 .home-title-two {
-  font-size: 6rem;
-  font-family: var(--header-font);
-  letter-spacing: 0.5rem;
+  position: absolute;
+  top: 50%;
+  font-size: 4rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
 }
 .home-title-one span,
 .home-title-two span {
-  color: var(--button-color);
+  color: var(--primary-color);
 }
 
 .know-more {
-  line-height: 5rem;
-  font-family: var(--text-font);
+  position: absolute;
+  top: 67%;
+  line-height: 3.5rem;
+  font-family: var(--font-primary);
   font-size: 1.2rem;
-  background-color: var(--button-color);
-  padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  padding: 0rem 3rem;
   border-radius: 0.2rem;
   text-decoration: none;
-  color: var(--background-color);
+  color: var(--secondarytext-color);
 }
 
 /***About Container***/
 .about-container {
   width: 100%;
-  margin-top: 4rem;
+  height: 90vh;
+  background-image: url("../img/about.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5rem;
+  position: relative;
 }
 .about-container h1 {
-  font-size: 6rem;
-  font-family: var(--header-font);
-  padding-left: 1rem;
-  margin-bottom: 2rem;
+  position: absolute;
+  left: 35%;
+  font-size: 4rem;
+  font-family: var(--font-primary);
 }
 span {
   color: var(--button-color);
@@ -71,35 +82,47 @@ span {
 }
 
 .about-container-para p {
-  font-family: var(--text-font);
+  position: absolute;
+  left: 35%;
+  top: 30%;
+  width: 60%;
+  font-family: var(--font-primary);
   font-size: 1.2rem;
-  font-weight: bold;
   text-align: justify;
-  line-height: 2rem;
-  margin-bottom: 10rem;
-  padding: 0 1rem;
+  line-height: 2.2rem;
 }
 
 /***Team Container****/
 .team-container {
   width: 100%;
-  margin-top: 4rem;
+  margin: 0 auto;
 }
 .team-container h1 {
   padding-left: 1rem;
   font-size: 6rem;
-  font-family: var(--header-font);
+  font-family: var(--font-primary);
 }
 /**Testimonial Container***/
 .testimonial-container {
   width: 100%;
   margin-top: 10rem;
+  background-image: url("../img/testimonial.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .testimonial-container h1 {
-  font-size: 6rem;
-  font-family: var(--header-font);
+  font-size: 4rem;
+  font-family: var(--font-primary);
+  margin-bottom: 2rem;
 }
-
+.testimonial-container h2 {
+  font-size: 3rem;
+  font-family: var(--font-primary);
+}
+.testimonial-container .imp {
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
 @media (max-width: 950px) {
   .home-title-one,
   .home-title-two {

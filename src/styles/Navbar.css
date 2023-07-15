@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 :root {
-  --background-color: white;
-  --text-color: black;
-  --button-color: rgb(101, 9, 239);
-  --textbutton-color: white;
-  --header-font: "Bebas Neue", sans-serif;
-  --text-font: "Montserrat", sans-serif;
+  --bg-color: #ffffff;
+  --primary-color: #6509ef;
+  --secondary-color: #ddb0ff;
+  --primarytext-color: #1f1f1f;
+  --secondarytext-color: #faefd9;
+  --font-primary: "Merriweather Sans", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -20,7 +22,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
 }
 
 .navbar {
@@ -30,19 +32,19 @@ body {
 
 .ad-container {
   width: 100%;
-  background-color: var(--button-color);
+  background-color: var(--primary-color);
 }
 .ad-container h1 {
   text-align: center;
   font-size: 1rem;
-  font-family: var(--text-font);
-  color: var(--textbutton-color);
+  font-family: var(--font-primary);
+  color: var(--secondarytext-color);
   padding: 1rem;
 }
 
 .logo h1 {
   font-size: 3rem;
-  font-family: var(--header-font);
+  font-family: var(--font-primary);
   font-weight: bolder;
   margin-left: 2rem;
 }
@@ -60,7 +62,7 @@ body {
   left: 85%;
   margin-top: 3.2rem;
   transition: 0.5s;
-  background-color: var(--text-color);
+  background-color: var(--primarytext-color);
 }
 
 .line:nth-child(1) {
@@ -75,20 +77,20 @@ body {
 .nav-elements ul {
   display: flex;
   list-style-type: none;
-  font-family: var(--text-font);
+  font-family: var(--font-primary);
   font-weight: bold;
 }
 
 .nav-elements a {
   font-size: 1.2rem;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--primarytext-color);
   margin-right: 4rem;
 }
 
 .get-started a {
-  background-color: var(--button-color);
-  color: var(--textbutton-color);
+  background-color: var(--primary-color);
+  color: var(--secondarytext-color);
   padding: 1rem 3rem;
   border-radius: 0.2rem;
 }

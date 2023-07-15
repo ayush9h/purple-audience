@@ -1,7 +1,13 @@
 import React from 'react';
 import '../styles/footer.css';
+import { gsap } from 'gsap';
+import { useLayoutEffect } from 'react';
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Footer = () => {
+
+    
   return (
     <footer className="footer-distributed">
     <div className="footer-left">

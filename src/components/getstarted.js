@@ -1,11 +1,69 @@
 import React, { useState } from 'react';
 import '../styles/getstarted.css';
 import axios from 'axios';
-
+import { gsap } from 'gsap';
+import { useLayoutEffect } from 'react';
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
 const TwoColumnGrid = () => {
 
+  useLayoutEffect(()=>{
+    gsap.from(".left-column",{
+      scrollTrigger:".left-column",
+      x:-50,
+      duration:1,
+      opacity:0,
+      start:"top 20%",
+      end:"bottom 80%",
+      toggleActions:"play none none reverse",
+    })
+    gsap.from(".right-column h3",{
+      scrollTrigger:".right-column h3",
+      y:-50,
+      duration:1,
+      opacity:0,
+      start:"top 20%",
+      end:"bottom 80%",
+      toggleActions:"play none none reverse",
+    })
+
+    gsap.from(".right-column .form input",{
+      stagger:{amount:1},
+      scrollTrigger:".right-column .form input",
+      y:-50,
+      duration:1,
+      opacity:0,
+      start:"top 20%",
+      end:"bottom 80%",
+      toggleActions:"play none none reverse",
+    })
+
+    gsap.from(".right-column .form label",{
+      stagger:{amount:1},
+      scrollTrigger:".right-column .form label",
+      y:-50,
+      duration:1,
+      opacity:0,
+      start:"top 20%",
+      end:"bottom 80%",
+      toggleActions:"play none none reverse",
+    })
+
+
+    gsap.from(".right-column .form button",{
+      stagger:{amount:1},
+      scrollTrigger:".right-column .form button",
+      x:50,
+      duration:1,
+      opacity:0,
+      start:"top 20%",
+      end:"bottom 80%",
+      toggleActions:"play none none reverse",
+    })
+  })
+  
   const [name,setName] = useState('')
   const [city,setCity] = useState('')
   const [address,setAddress] = useState('')
@@ -26,24 +84,9 @@ const TwoColumnGrid = () => {
   }
   return (
     <div className='max-width'>
-        <h1 className='get-started-title' id='getstarted'><span>Get</span> Started</h1>
+        <h1 className='get-started-title' id='getstarted'><span>GET</span> STARTED</h1>
     <div className="grid-container">
       <div className="left-column">
-        <h2>Start Your Journey to <span>Mental Well-being</span></h2>
-        <p>
-          Are you ready to take the first step towards better mental health? Join Purple Audience today and embark on a transformative journey of self-discovery and well-being. Our dedicated community and expert resources are here to support you every step of the way.
-        </p>
-        <ul>
-          <li>Engaging articles and educational content on <span>mental</span> health topics.</li>
-          <li>Guided <span>meditation and mindfulness</span> exercises to promote relaxation and inner peace.</li>
-          <li>Inspiring stories and testimonials from individuals who have <span>overcome</span> mental health challenges.</li>
-          <li>Expert advice from leading professionals in the field of mental wellness.</li>
-          <li>Online workshops and events to <span>enhance</span> your knowledge and skills.</li>
-          <li>A supportive community of <span>like-minded individuals</span> who understand and empathize with your experiences.</li>
-        </ul>
-        <p>
-          <span>Remember</span>, you're not alone. Together, we can make a positive difference in our mental health and create a world where everyone feels supported and understood.
-        </p>
       </div>
       <div className="right-column">
         <form className="form" action='POST'>

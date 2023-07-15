@@ -1,16 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  user-select: none;
 }
 :root {
-  --background-color: white;
-  --text-color: black;
-  --button-color: #6509ef;
-  --textbutton-color: white;
-  --header-font: "Bebas Neue", sans-serif;
-  --text-font: "Montserrat", sans-serif;
+  --bg-color: #ffffff;
+  --primary-color: #6509ef;
+  --secondary-color: #ddb0ff;
+  --primarytext-color: #1f1f1f;
+  --secondarytext-color: #faefd9;
+  --font-primary: "Merriweather Sans", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -18,10 +20,12 @@ body {
 
 footer {
   bottom: 0;
+  border-radius: 2rem 2rem 0 0;
+  border: 0.1rem solid var(--primarytext-color);
 }
 
 .footer-distributed {
-  background-color: azure;
+  background-color: #e7f3ff;
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -43,8 +47,8 @@ footer {
 }
 
 .footer-distributed h3 {
-  color: var(--text-color);
-  font-family: var(--header-font);
+  color: var(--primarytext-color);
+  font-family: var(--font-primary);
   font-size: 2rem;
   margin: 0;
 }
@@ -56,7 +60,7 @@ footer {
 /* Footer links */
 
 .footer-distributed .footer-links {
-  color: #ffffff;
+  color: var(--secondary-color);
   margin: 2rem 0 1.2rem;
 }
 
@@ -70,7 +74,7 @@ footer {
 .footer-distributed .footer-company-name {
   color: #8f9296;
   font-size: 1rem;
-  font-family: var(--text-font);
+  font-family: var(--font-primary);
   margin: 0;
 }
 
@@ -81,7 +85,7 @@ footer {
 }
 
 .footer-distributed .footer-center i {
-  color: var(--text-color);
+  color: var(--primarytext-color);
   font-size: 1.5rem;
   width: 2rem;
   height: 4rem;
@@ -98,10 +102,10 @@ footer {
 
 .footer-distributed .footer-center p {
   display: inline-block;
-  color: var(--text-color);
+  color: var(--primarytext-color);
   font-size: 1rem;
   font-weight: bold;
-  font-family: var(--text-font);
+  font-family: var(--font-primary);
   vertical-align: middle;
   margin: 0;
 }
@@ -114,7 +118,7 @@ footer {
 }
 
 .footer-distributed .footer-center p a {
-  color: var(--button-color);
+  color: var(--primary-color);
   text-decoration: none;
 }
 
@@ -127,14 +131,14 @@ footer {
 .footer-distributed .footer-company-about {
   line-height: 20px;
   font-size: 1.4rem;
-  font-family: var(--text-font);
+  font-family: var(--font-primary);
   margin: 0;
   text-align: justify;
 }
 
 .footer-distributed .footer-company-about span {
   display: block;
-  color: var(--text-color);
+  color: var(--primarytext-color);
   font-size: 1rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -149,10 +153,10 @@ footer {
   width: 2.5rem;
   height: 2.5rem;
   cursor: pointer;
-  background-color: grey;
+  background-color: var(--primarytext-color);
   border-radius: 50%;
   font-size: 1.2rem;
-  color: #ffffff;
+  color: var(--secondarytext-color);
   text-align: center;
   line-height: 2.6rem;
   margin-right: 1rem;
