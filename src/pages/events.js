@@ -3,6 +3,10 @@ import TwoColumnGrid from "../components/getstarted";
 import Footer from "../components/footer"
 import React from "react";
 import "../styles/events.css";
+import { gsap } from 'gsap';
+import { useLayoutEffect } from 'react';
+import ScrollTrigger from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const events = [
   {
@@ -41,17 +45,30 @@ const EventCard = ({event}) =>{
         <h1 className="reg"><span>REGISTRATION NOT REQUIRED</span></h1>
       </div>
     </div>
+
   )
 }
 
 export default function Events() {
+  useLayoutEffect(()=>{
+    gsap.from(".event-title-container",{
+      x:50,
+      opacity:0,
+      duration:1,
+    })
+    gsap.from(".event-title-container h1",{y:-20,rotateX:-45,opacity:0,duration:1.5,delay:1.6})
+    gsap.from(".event-title-container p",{y:-20,rotateX:-45,opacity:0,duration:1.5,delay:1.6})
+
+  })
+ 
   return (
     <div>
       <Navbar/>  
       {/*******For Title*******/}
       <div className="event-title-container">
         <div className="max-width">
-              <h1><span>Upcoming</span> Events - 2K23</h1>
+              <h1><span>Upcoming</span><br></br> Events-2K23</h1>
+              <p>Zero hidden <span>service fees, group discounts and more</span>. Because it should<br></br> be this easy.</p>
         </div>
       </div>
 
@@ -62,7 +79,8 @@ export default function Events() {
           <EventCard event={event} key={index} />
           
         ))}
-
+          
+          <div className="more-events">More events coming soon.</div>
           </div>
         </div>
       <TwoColumnGrid/>

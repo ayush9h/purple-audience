@@ -13,6 +13,7 @@ const Footer = () => {
     <div className="footer-left">
         <h3>PURPLE<span> AUDIENCE</span></h3>
         <p className="footer-company-name">Copyright &copy; 2022-23 <strong>Purple Audience</strong><br></br> All Rights Reserved.</p>
+        <p className="footer-company-name"><strong>Developed By: Ayush Kumar, Aditya Choudhary and Dharmanshu Singh</strong></p>
     </div>
     <div className="footer-center">
         <div>

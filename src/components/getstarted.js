@@ -9,60 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const TwoColumnGrid = () => {
 
-  useLayoutEffect(()=>{
-    gsap.from(".left-column",{
-      scrollTrigger:".left-column",
-      x:-50,
-      duration:1,
-      opacity:0,
-      start:"top 20%",
-      end:"bottom 80%",
-      toggleActions:"play none none reverse",
-    })
-    gsap.from(".right-column h3",{
-      scrollTrigger:".right-column h3",
-      y:-50,
-      duration:1,
-      opacity:0,
-      start:"top 20%",
-      end:"bottom 80%",
-      toggleActions:"play none none reverse",
-    })
-
-    gsap.from(".right-column .form input",{
-      stagger:{amount:1},
-      scrollTrigger:".right-column .form input",
-      y:-50,
-      duration:1,
-      opacity:0,
-      start:"top 20%",
-      end:"bottom 80%",
-      toggleActions:"play none none reverse",
-    })
-
-    gsap.from(".right-column .form label",{
-      stagger:{amount:1},
-      scrollTrigger:".right-column .form label",
-      y:-50,
-      duration:1,
-      opacity:0,
-      start:"top 20%",
-      end:"bottom 80%",
-      toggleActions:"play none none reverse",
-    })
-
-
-    gsap.from(".right-column .form button",{
-      stagger:{amount:1},
-      scrollTrigger:".right-column .form button",
-      x:50,
-      duration:1,
-      opacity:0,
-      start:"top 20%",
-      end:"bottom 80%",
-      toggleActions:"play none none reverse",
-    })
-  })
   
   const [name,setName] = useState('')
   const [city,setCity] = useState('')
@@ -74,7 +20,7 @@ const TwoColumnGrid = () => {
     e.preventDefault()
 
     try{
-      const response = await axios.post("https://ap-south-1.aws.data.mongodb-api.com/app/64913f68b4552e32900a2c59/endpoint/data/v1",
+      const response = await axios.post("http://localhost:3000",
         {name, city, address, phone});
         setMessage(response.data.message);
     }

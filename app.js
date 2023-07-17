@@ -10,7 +10,7 @@ app.get("/",cors(),(req,res)=>{
 
 })
 
-app.post("https://ap-south-1.aws.data.mongodb-api.com/app/64913f68b4552e32900a2c59/endpoint/data/v1",async(req,res)=>{
+app.post("https://localhost:3000/",async(req,res)=>{
     const {name,city,address,phone} = req.body
 
     const existingEntry = await collection.findOne({phone:phone})

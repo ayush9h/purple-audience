@@ -1,17 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  user-select: none;
+  cursor: pointer;
 }
 :root {
-  --background-color: white;
-  --text-color: black;
-  --button-color: #6509ef;
-  --textbutton-color: white;
-  --header-font: "Bebas Neue", sans-serif;
-  --text-font: "Montserrat", sans-serif;
+  --bg-color: #ffffff;
+  --primary-color: #6509ef;
+  --secondary-color: #ddb0ff;
+  --primarytext-color: #1f1f1f;
+  --secondarytext-color: #faefd9;
+  --font-primary: "Merriweather Sans", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -22,19 +24,28 @@ body {
 }
 .event-title-container {
   width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  height: 85vh;
   background-image: url("../img/event.svg");
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .event-title-container h1 {
-  font-size: 8rem;
-  font-family: var(--header-font);
+  position: absolute;
+  top: 30%;
+  font-size: 5rem;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.event-title-container p {
+  position: absolute;
+  top: 65%;
+  font-size: 1.2rem;
+  font-family: var(--font-primary);
+  font-weight: bold;
 }
 
 .event-card-container {
@@ -53,15 +64,13 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   gap: 2rem;
-  margin-top: 5rem;
-  border-radius: 1.25rem;
-  border: 2px solid #000;
-  box-shadow: 0.5rem 0.5rem 0px 0px var(--button-color);
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-top: 3rem;
+  border: 0.2rem dotted var(--primary-color);
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   padding: 2rem;
 }
 .card:hover {
-  box-shadow: -0.5rem 0.5rem 0rem var(--button-color);
+  border: 0.2rem solid var(--primary-color);
 }
 
 .card-image {
@@ -74,27 +83,26 @@ body {
   grid-area: 1 / 2 / 2 / 3;
 }
 .card-desc h2 {
-  color: #000;
-  font-size: 2.5rem;
-  font-family: var(--header-font);
+  color: var(--primarytext-color);
+  font-size: 2rem;
+  margin-bottom: 1rem;
   text-align: justify;
+  font-family: var(--font-primary);
 }
 .card-desc p {
-  color: #000;
+  color: var(--primarytext-color);
   text-align: justify;
   font-size: 1.2rem;
-  font-family: var(--text-font);
-  font-weight: 600;
-  line-height: normal;
+  font-family: var(--font-primary);
   flex-direction: column;
   flex-shrink: 0;
 }
 
 .card-desc h4 {
-  color: var(--text-color);
+  color: var(--primarytext-color);
   text-align: justify;
   font-size: 1.2rem;
-  font-family: var(--text-font);
+  font-family: var(--font-primary);
 }
 .card-desc .date {
   margin-top: 1rem;
@@ -102,6 +110,17 @@ body {
 
 .reg {
   margin-top: 2rem;
-  font-family: var(--header-font);
-  font-size: 2rem;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.more-events {
+  margin-top: 5rem;
+  font-family: var(--font-primary);
+  font-size: 1.5rem;
+  color: var(--secondarytext-color);
+
+  background-color: var(--primary-color);
+  padding: 1rem;
 }
