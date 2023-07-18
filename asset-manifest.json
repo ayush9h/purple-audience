@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/purple-audience/static/css/main.c172ba7f.css",
-    "main.js": "/purple-audience/static/js/main.897b1cba.js",
-    "static/js/845.c0acf574.chunk.js": "/purple-audience/static/js/845.c0acf574.chunk.js",
+    "main.css": "/purple-audience/static/css/main.0c309f01.css",
+    "main.js": "/purple-audience/static/js/main.ca895260.js",
     "static/media/med.svg": "/purple-audience/static/media/med.025ea199b8d099f81c61.svg",
     "static/media/med.mp3": "/purple-audience/static/media/med.1bf73e5a5c2f055f5926.mp3",
     "static/media/event.svg": "/purple-audience/static/media/event.ba81c235a53161572ced.svg",
@@ -10,14 +9,14 @@
     "static/media/getstarted.svg": "/purple-audience/static/media/getstarted.b4adbbe6f2aff6e55bcc.svg",
     "static/media/home.svg": "/purple-audience/static/media/home.14f6c28c3ce2b5dee92d.svg",
     "static/media/about.svg": "/purple-audience/static/media/about.757e047d43572ea746f5.svg",
+    "static/media/music.svg": "/purple-audience/static/media/music.9226818da40899f0be1f.svg",
     "static/media/testimonial.svg": "/purple-audience/static/media/testimonial.e42ca1dae92ac898437a.svg",
     "index.html": "/purple-audience/index.html",
-    "main.c172ba7f.css.map": "/purple-audience/static/css/main.c172ba7f.css.map",
-    "main.897b1cba.js.map": "/purple-audience/static/js/main.897b1cba.js.map",
-    "845.c0acf574.chunk.js.map": "/purple-audience/static/js/845.c0acf574.chunk.js.map"
+    "main.0c309f01.css.map": "/purple-audience/static/css/main.0c309f01.css.map",
+    "main.ca895260.js.map": "/purple-audience/static/js/main.ca895260.js.map"
   },
   "entrypoints": [
-    "static/css/main.c172ba7f.css",
-    "static/js/main.897b1cba.js"
+    "static/css/main.0c309f01.css",
+    "static/js/main.ca895260.js"
   ]
 }
