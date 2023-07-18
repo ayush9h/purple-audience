@@ -32,7 +32,9 @@ const Medcorner = () =>{
     setIsPlaying(!isPlaying);
   };
 
+  useLayoutEffect(()=>{
 
+  
     gsap.from(".meditation-container",{
       x:50,
       opacity:0,
@@ -106,6 +108,7 @@ const Medcorner = () =>{
       end:"bottom 80%",
       toggleActions:"play none none reverse",
     })
+  })
   return(
     <div>
       <Navbar/>
