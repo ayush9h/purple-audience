@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/purple-audience/static/css/main.50eb2deb.css",
+    "main.css": "/purple-audience/static/css/main.6aedda00.css",
     "main.js": "/purple-audience/static/js/main.c38113ea.js",
     "static/media/med.svg": "/purple-audience/static/media/med.55dde8831ea23a149d84.svg",
     "static/media/med.mp3": "/purple-audience/static/media/med.1bf73e5a5c2f055f5926.mp3",
@@ -9,14 +9,14 @@
     "static/media/getstarted.svg": "/purple-audience/static/media/getstarted.b4adbbe6f2aff6e55bcc.svg",
     "static/media/home.svg": "/purple-audience/static/media/home.14f6c28c3ce2b5dee92d.svg",
     "static/media/about.svg": "/purple-audience/static/media/about.757e047d43572ea746f5.svg",
-    "static/media/music.svg": "/purple-audience/static/media/music.962ab40b7ecd34005f55.svg",
+    "static/media/music.svg": "/purple-audience/static/media/music.1447e6637a2274483937.svg",
     "static/media/testimonial.svg": "/purple-audience/static/media/testimonial.e42ca1dae92ac898437a.svg",
     "index.html": "/purple-audience/index.html",
-    "main.50eb2deb.css.map": "/purple-audience/static/css/main.50eb2deb.css.map",
+    "main.6aedda00.css.map": "/purple-audience/static/css/main.6aedda00.css.map",
     "main.c38113ea.js.map": "/purple-audience/static/js/main.c38113ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.50eb2deb.css",
+    "static/css/main.6aedda00.css",
     "static/js/main.c38113ea.js"
   ]
 }
