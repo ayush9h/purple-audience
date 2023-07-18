@@ -1,17 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  user-select: none;
+  cursor: pointer;
 }
 :root {
-  --background-color: white;
-  --text-color: black;
-  --button-color: #6509ef;
-  --textbutton-color: white;
-  --header-font: "Bebas Neue", sans-serif;
-  --text-font: "Montserrat", sans-serif;
+  --bg-color: #ffffff;
+  --primary-color: #6509ef;
+  --secondary-color: #ddb0ff;
+  --primarytext-color: #1f1f1f;
+  --secondarytext-color: #faefd9;
+  --font-primary: "Merriweather Sans", sans-serif;
 }
 body {
   font-size: 62.5%;
@@ -20,130 +22,34 @@ body {
   width: min(320ch, 100% - 4rem);
   margin-inline: auto;
 }
-.medcorner-container {
+
+.meditation-container {
   width: 100%;
-  height: 100vh;
-  position: relative;
+  height: 80vh;
   background-image: url("../img/med.svg");
   background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
 }
-
-.medcorner-container h1 {
-  font-size: 6rem;
-  font-family: var(--header-font);
-  line-height: 7rem;
+.meditation-container h1 {
   position: absolute;
   top: 30%;
+  font-size: 5rem;
+  font-family: var(--font-primary);
 }
-.medcorner-container p {
-  font-size: 1.2rem;
-  font-family: var(--text-font);
-  font-weight: bold;
+.meditation-container p {
   position: absolute;
-  text-align: justify;
   top: 50%;
-}
-
-.medmusic-guide {
-  margin-top: 5rem;
-  width: 100%;
-}
-.medmusic-guide h1 {
-  font-size: 6rem;
-  font-family: var(--header-font);
-}
-.medmusic-guide p {
   font-size: 1.2rem;
-  font-family: var(--text-font);
-  font-weight: bold;
+  font-family: var(--font-primary);
 }
-
-.component {
-  background-color: azure;
-  width: 100%;
-  max-width: 50rem;
-  margin: 4rem auto;
-  padding: 2.5rem;
-  border: 0.2rem solid var(--text-color);
-  box-shadow: 0.5rem 0.5rem 0rem var(--button-color);
-  border-radius: 0.2rem;
-}
-.title {
-  font-size: 3rem;
-  font-family: var(--header-font);
-}
-.subTitle {
-  color: #4f4f4f;
-  font-size: 1rem;
-  font-family: var(--text-font);
-  font-weight: bold;
-  margin-top: -3rem;
-}
-
-.playButton {
-  background: none;
-  border: none;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
-.time {
-  margin: 0rem auto;
-  margin-top: 2rem;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  color: #828282;
-  font-family: var(--text-font);
-  font-size: 1rem;
-}
-
-.timeline {
-  width: 100%;
-}
-.blog-container {
-  margin-top: 5rem;
-  width: 100%;
-}
-.blog-container h1 {
-  font-size: 6rem;
-  font-family: var(--header-font);
-}
-.blog-cardholder {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 2rem;
-}
-
-.medcard {
-  margin-top: 5rem;
-  width: 25rem;
-  height: 15rem;
-  padding: 2rem;
-  background-color: azure;
-  border-radius: 0.2rem;
-  outline: none;
-  border: 0.2rem solid black;
-  box-shadow: 0.3rem 0.3rem 0rem var(--button-color);
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  cursor: pointer;
-}
-
-.medcard:hover {
-  box-shadow: -0.3rem 0.3rem 0rem var(--button-color);
-}
-
-.medcard h3 {
-  font-size: 2rem;
-  font-family: var(--header-font);
-}
-.medcard p {
-  font-size: 1.2rem;
-  font-family: var(--text-font);
-}
-@media (max-width: 900px) {
-  .component {
-    width: 50%;
-  }
+.meditation-container a {
+  position: absolute;
+  top: 70%;
+  color: var(--secondarytext-color);
+  text-decoration: none;
+  border-radius: 0.4rem;
+  font-size: 1.4rem;
+  font-family: var(--font-primary);
+  background-color: var(--primary-color);
+  padding: 1rem 3rem;
 }

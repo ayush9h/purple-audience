@@ -18,6 +18,9 @@
 body {
   font-size: 62.5%;
 }
+span {
+  color: var(--primary-color);
+}
 .max-width {
   width: min(320ch, 100% - 4rem);
   margin-inline: auto;

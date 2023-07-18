@@ -17,7 +17,9 @@
 body {
   font-size: 62.5%;
 }
-
+span {
+  color: var(--primary-color);
+}
 footer {
   bottom: 0;
   border-radius: 2rem 2rem 0 0;
