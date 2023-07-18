@@ -29,6 +29,7 @@ body {
   background-image: url("../img/med.svg");
   background-size: cover;
   position: relative;
+  overflow-x: hidden;
 }
 .meditation-container h1 {
   position: absolute;
@@ -52,4 +53,98 @@ body {
   font-family: var(--font-primary);
   background-color: var(--primary-color);
   padding: 1rem 3rem;
+}
+
+.medi-header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+}
+.medi-header h1 {
+  font-size: 4rem;
+  font-family: var(--font-primary);
+}
+
+.meditation-benefits {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 4rem;
+  padding: 0rem 2rem;
+}
+.benefit-card {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #edf2fd;
+  border-radius: 0.4rem;
+}
+.benefit-card h1 {
+  font-size: 1.2rem;
+  font-family: var(--font-primary);
+  color: var(--primarytext-color);
+}
+
+.guided-med {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 5rem;
+  background-image: url("../img/music.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 85vh;
+}
+
+.guided-med h1 {
+  font-size: 4rem;
+  font-family: var(--font-primary);
+}
+
+.guided-med p {
+  font-size: 1.3rem;
+  font-family: var(--font-primary);
+}
+
+.music-container {
+  width: 50%;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 3rem;
+  overflow-x: hidden;
+  margin-top: 3rem;
+  border-radius: 0.5rem;
+}
+.music-container h2 {
+  font-size: 2.5rem;
+  font-family: var(--font-primary);
+}
+
+.music-container h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+}
+
+.music-container button {
+  padding: 1rem 3rem;
+  background-color: var(--primary-color);
+  outline: none;
+  border: none;
+  color: var(--bg-color);
+  font-size: 1.5rem;
+  font-family: var(--font-primary);
+  border-radius: 0.3rem;
 }
