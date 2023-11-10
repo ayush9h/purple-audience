@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+:root{
+    --primary-color : #5e04fa;
+    --text-color: #27005D;
+    --accent-color : #E4F1FF;
+    --highlight-color:#A0FA04;
+    --primary-font: "Alice",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+span{
+    color:var(--primary-color);
+}
+.max-width {
+  width: min(290ch, 100% - 4rem);
+  margin-inline: auto;
+}
+.abouthead-container{
+    margin: 5rem;
+}
+.abouthead-container h1{
+    font-size: 7rem;
+    font-family: var(--primary-font);
+}
+.abouthead-container .about-desc{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+
+.our-purpose{
+  width: 100%;
+  margin-top: 10rem;
+}
+.our-purpose .our-values{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 4rem;
+}
+
+.card-value{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.card-value h1{
+  font-size: 2.5rem;
+}
+.card-value p{
+  margin-top: 3rem;
+  text-align: left;
+  font-size: 1.7rem;
+}
+
+.team-title{
+    font-family: var(--primary-font);
+    font-size: 7rem;
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.profile-cards-container {
+    margin: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 4rem;
+  }
+  
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: var(--accent-color);
+    border-radius: 0.5rem;
+    text-align: center;
+    outline: none;
+    border: 0.15rem solid black;
+    box-shadow: 0.3rem 0.3rem 0rem var(--primary-color);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+  }
+  
+  .profile-image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 2rem 0 3rem 0;
+  }
+  
+  .profile-name {
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    color: var(--button-color);
+    margin-bottom: 2rem;
+  }
+  
+  .profile-position {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    font-family: var(--primary-font);
+  }
+  
+  .profile-card:hover {
+    box-shadow: -0.3rem 0.3rem 0rem var(--primary-color);
+  }
+  
+  .profile-socials {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .profile-socials i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    color: var(--accent-color);
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+  }
+  @media (max-width: 500px) {
+    .profile-cards-container {
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+  }

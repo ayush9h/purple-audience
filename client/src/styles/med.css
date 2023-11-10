@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+:root{
+    --primary-color : #5e04fa;
+    --text-color: #27005D;
+    --accent-color : #e9f4ff;
+    --highlight-color:#A0FA04;
+    --primary-font: "Alice",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+span{
+    color:var(--primary-color);
+}
+.max-width {
+  width: min(290ch, 100% - 4rem);
+  margin-inline: auto;
+}
+.medhead-container{
+    height: 60vh;
+    background-image: url("../img/med.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.med-title{
+    font-size: 7rem;
+    font-family: var(--primary-font);
+    padding: 5rem 0rem;
+}
+.med-desc{
+    width: 45%;
+    text-align: justify;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+}
+.audio-med{
+    width: 40%;
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    padding: 5rem 0rem;
+}
+
+/* Medtab Container */
+.medtab-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10rem;
+}
+.medtab-container .medtab-title{
+    font-size: 7rem;
+    font-family: var(--primary-font);
+}
+.music-tab{
+    margin-top: 5rem;
+    width: 100%;
+    height: 50rem;
+    background-image: url("../img/music.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.tab-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: white;
+}
+.tab{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.tab h1{
+    font-family: var(--primary-font);
+    font-size: 2rem;
+}
+.tab-content{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.tab-content .tab-contentheader{
+    font-size: 2rem;
+    font-family: var(--primary-font);
+    margin-bottom: 2rem;
+}
+
+/* Responsiveness */
+@media screen and (max-width:900px) {
+    .medhead-container{
+        background-image: none;
+    }
+    .medhead-container .med-title{
+        font-size: 2rem;
+    }
+    .med-desc{
+        width: 100%;
+    }
+}

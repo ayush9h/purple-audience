@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color : #5e04fa;
+    --text-color: #27005D;
+    --accent-color : #E4F1FF;
+    --highlight-color:#A0FA04;
+    --primary-font: "Alice",sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+  }
+html{
+    font-size: 62.5%;
+    font-weight: 500;
+}
+span{
+    color:var(--primary-color);
+}
+.navigation-menu{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 8rem;
+}
+.ad-container 
+{
+    width: 100%;
+    background-color: var(--primary-color);
+}
+.ad-container h1 {
+  text-align: center;
+  font-size: 1.6rem;
+  font-family: var(--primary-font);
+  color: var(--accent-color);
+  padding: 1.6rem;
+}
+.navigation-menu .logo{
+    font-size: 3rem;
+    font-family: var(--primary-font);
+    color:var(--text-color);
+}
+.nav-links,.auth-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+a{
+    text-decoration: none;
+    color:var(--text-color);
+}
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+.nav-links li,.auth-links li{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    list-style-type: none;
+    margin-right: 2rem;
+    cursor: pointer;
+}
+.nav-links li:hover{
+    font-weight: bolder;
+}
+.auth-links .get-started a{
+    padding: 1.6rem;
+    background-color: var(--highlight-color);
+    border-radius: 4rem;
+    color:var(--text-color)
+}
+
+
+@media screen and (max-width:800px) {
+    .menu-toggle {
+        display: block;
+      }
+    .nav-links{
+        position: absolute;
+        top:15%;
+        text-align: left;
+        background-color: var(--primary-color);
+        width: 100%;
+        z-index: 1;
+    }
+    a{
+        
+        color:var(--accent-color);
+    }
+    .nav-links li{
+        margin: 2rem 2rem;
+        font-size: 2rem;
+    }
+    .auth-links .get-started{
+      position: absolute;
+      top:30%;
+      right: 0;
+    }
+    .nav-links {
+        display: none;
+        /* Add other styles as needed */
+      }
+      .nav-links.open {
+        display: block;
+        /* Add other styles as needed */
+      }
+}
