@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.a30b3069.css",
+    "main.js": "/static/js/main.d3ec435c.js",
+    "static/media/demo-music-4.mp3": "/static/media/demo-music-4.3fa47c3588d2dbbc3755.mp3",
+    "static/media/demo-music.mp3": "/static/media/demo-music.1bf73e5a5c2f055f5926.mp3",
+    "static/media/demo-music-3.mp3": "/static/media/demo-music-3.971be2d4c67fa5d63775.mp3",
+    "static/media/demo-music-1.mp3": "/static/media/demo-music-1.f049e4ee26d45213c85d.mp3",
+    "static/media/med.svg": "/static/media/med.21c126ece7b341da7a3f.svg",
+    "static/media/card.svg": "/static/media/card.cd85ce68db1a476c5a6c.svg",
+    "static/media/home.svg": "/static/media/home.14f6c28c3ce2b5dee92d.svg",
+    "static/media/event.svg": "/static/media/event.1b40a6cc14a3169d4ff3.svg",
+    "static/media/about.svg": "/static/media/about.c3fc293d933db723b229.svg",
+    "static/media/music.svg": "/static/media/music.abe3712939bc885ed7e6.svg",
+    "static/media/testimonial.svg": "/static/media/testimonial.e42ca1dae92ac898437a.svg",
+    "index.html": "/index.html",
+    "main.a30b3069.css.map": "/static/css/main.a30b3069.css.map",
+    "main.d3ec435c.js.map": "/static/js/main.d3ec435c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a30b3069.css",
+    "static/js/main.d3ec435c.js"
+  ]
+}
