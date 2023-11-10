@@ -5,9 +5,9 @@ Purple Audience is a captivating mental health awareness website that aims to cr
 
 ## Installation
 
-This website is hosted on https://ayush9h.github.io/purple-audience as front-end web.
+This website is hosted on https://654dc21462fc3931a60e3338--exquisite-rolypoly-8b36e9.netlify.app/ as a front-end web application.
 
-For database, you can download the files locally on your system.
+For the database, you can download the files locally on your system.
 
 **Step 1:** Install Necessary Packages
 ```
