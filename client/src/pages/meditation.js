@@ -3,11 +3,12 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import '../styles/med.css'
 import ReactAudioPlayer from 'react-audio-player';
-import audio from '../img/demo-music.mp3'
-import sleep from '../img/demo-music-1.mp3'
-import lofi from '../img/demo-music-3.mp3'
-import lofi1 from '../img/demo-music-4.mp3'
+import audio from '../assets/demo-music.mp3'
+import sleep from '../assets/demo-music-1.mp3'
+import lofi from '../assets/demo-music-3.mp3'
+import lofi1 from '../assets/demo-music-4.mp3'
 import Newsletter from "../components/newsletter";
+import Articles from "../components/articles";
 const Meditation = ()=>{
 
     const [tab,setTab] = useState(1);
@@ -63,6 +64,7 @@ const Meditation = ()=>{
                     </div>
                 </div>
             </div>
+            <Articles/>
             <Newsletter/>
         <Footer/>
         </div>

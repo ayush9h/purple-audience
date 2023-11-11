@@ -4,6 +4,7 @@ import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import TestimonialSlider from "../components/testimonial";
 import Newsletter from "../components/newsletter";
+import Articles from "../components/articles";
 const Home = () =>{
 
   
@@ -54,6 +55,9 @@ const Home = () =>{
           <TestimonialSlider/>
         </div>
     </div>
+
+      {/* Latest articles */}
+      <Articles/>
 
       {/* Subscribe to Newsletter */}
       <Newsletter/>

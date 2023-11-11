@@ -79,7 +79,6 @@ span{
     background-color: var(--accent-color);
     transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     padding: 3rem;
-    border-radius: 5rem;
     border: 0.2rem solid black;
   }
   .card:hover {
@@ -88,8 +87,6 @@ span{
   
   .card-image {
     grid-area: 1 / 1 / 2 / 2;
-    background-image: url("../img/card.svg");
-    background-size: cover;
   }
   
   .card-desc {
@@ -140,6 +137,21 @@ span{
     font-size: 2rem;
     font-family: var(--primary-font);
   }
+
+  .card:nth-child(2) .card-image
+  {
+      background-image: url("../img/cards/card-3.svg");
+  }
+  
+.card:nth-child(3) .card-image
+{
+    background-image: url("../img/cards/card.svg");
+}
+
+.card:nth-child(4) .card-image
+{
+    background-image: url("../img/cards/card-2.svg");
+}
 
   /* Responsiveness */
 @media screen and (max-width:900px) {

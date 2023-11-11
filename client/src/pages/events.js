@@ -3,6 +3,7 @@ import "../styles/events.css";
 import Newsletter from "../components/newsletter";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Articles from "../components/articles";
 
 const initialEvents = [
   {
@@ -93,7 +94,7 @@ export default function Events() {
           )}
         </div>
       </div>
-
+      <Articles/>
       <Newsletter />
       <Footer />
     </div>

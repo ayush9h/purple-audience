@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import Newsletter from "../components/newsletter";
 import Footer from "../components/footer";
+import Articles from "../components/articles";
 import '../styles/about.css'
 const About = () =>{
     const profiles = [
@@ -116,7 +117,7 @@ const About = () =>{
     </div>
       ))}
     </div>
-    
+    <Articles/>
     <Newsletter/>
     <Footer/>
     </div>
