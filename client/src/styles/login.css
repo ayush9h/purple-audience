@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+:root{
+    --primary-color : #5e04fa;
+    --text-color: #27005D;
+    --accent-color : #E4F1FF;
+    --highlight-color:#A0FA04;
+    --primary-font: "Alice",sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+span{
+    color:var(--primary-color);
+}
+.max-width {
+  width: min(290ch, 100% - 4rem);
+  margin-inline: auto;
+}
+.login-logo-header {
+    width: 100%;
+    text-align: center;
+}
+.welcome-back-header{
+    margin-top: 10rem;
+    width: 100%;
+    text-align: center;
+}
+.login-logo-header h1{
+    font-size: 5rem;
+    font-family: var(--primary-font);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.login-logo-header p{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+}
+
+.welcome-back-header h1{
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+}
+
+.login-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.email-login-form,.password-login-form{
+    margin-top: 2rem;
+    width: 25%;
+    padding:2rem 2rem;
+    font-size: 1.75rem;
+    font-family: var(--primary-font);
+    border-radius: 0.3rem;
+    outline: none;
+    border: 0.1rem solid black;
+}
+.submit-login-form{
+    width: 25%;
+    margin-top: 10rem;;
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    font-size: 1.75rem;
+    font-family: var(--primary-font);
+    border-radius: 0.3rem;
+    outline: none;
+    border: none;
+    background-color: var(--primary-color);
+    color:var(--accent-color);
+}
+.email-login-form:focus{
+    border: 0.2rem solid var(--primary-color);
+}
+.password-login-form:focus{
+    border: 0.2rem solid var(--primary-color);
+}
+
+.other-login{
+    margin-top: 2rem;
+    width: 100%;
+    text-align: center;
+}
+.other-login h1{
+    font-family: var(--primary-font);
+    font-size: 1.6rem;
+}
+
+.other-login h3{
+    font-family: var(--primary-font);
+    font-size: 1.2rem;
+    margin-top: 5rem;
+}
+
+@media screen and (max-width:1000px) {
+
+    .email-login-form,.password-login-form{
+        width: 100%;
+    }
+    .submit-login-form{
+        width: 100%;
+    }
+
+}

@@ -69,14 +69,25 @@ a{
     font-weight: bolder;
 }
 .auth-links .get-started a{
-    padding: 1.6rem;
-    background-color: var(--highlight-color);
-    border-radius: 4rem;
-    color:var(--text-color)
+    color:var(--text-color);
 }
 
+.login{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    background-color: var(--highlight-color);
+    padding: 1.6rem;
+    border-radius: 0.5rem;
+    list-style-type: none;
+}
+.login:hover{
+    font-weight: bolder;
+}
 
 @media screen and (max-width:800px) {
+    .navigation-menu .logo{
+        font-size: 1.5rem;
+    }
     .menu-toggle {
         display: block;
       }
@@ -84,29 +95,34 @@ a{
         position: absolute;
         top:15%;
         text-align: left;
-        background-color: var(--primary-color);
+        border-top: 0.1rem solid var(--primary-color);
+        background-color: white;
         width: 100%;
         z-index: 1;
     }
-    a{
-        
-        color:var(--accent-color);
-    }
-    .nav-links li{
+    .nav-links li {
         margin: 2rem 2rem;
         font-size: 2rem;
+        color:var(--accent-color);
     }
-    .auth-links .get-started{
+    .auth-links .get-started {
       position: absolute;
-      top:30%;
+      top:10%;
       right: 0;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      background-color: var(--highlight-color);
+    }
+
+    .auth-links .login{
+        position: absolute;
+        top:50%;
+        right: 0;
     }
     .nav-links {
         display: none;
-        /* Add other styles as needed */
       }
       .nav-links.open {
         display: block;
-        /* Add other styles as needed */
       }
 }
