@@ -31,7 +31,7 @@ npm start
 
 **Step 6:** Open MongoDB Compass on your system and click on connect button.
 
-**Step 7:** Fill the form in newsletter section. You should be able to see the data on Compass and corresponding toast icon.
+**Step 7:** Fill the form in newsletter section and the register yourself form. You should be able to see the data on Compass and corresponding toast icon.
 
 
 ## Tech Stack
