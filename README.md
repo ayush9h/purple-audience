@@ -1,5 +1,5 @@
 
-## Purple Audience (Update 2.5)
+## Purple Audience (Update 2.75)
 
 Purple Audience is a captivating mental health awareness website that aims to create a safe space for individuals to explore and nurture their well-being. With a soothing and inviting design, Purple Audience provides a platform that promotes mental health awareness, offering a range of resources and support for visitors.
 
