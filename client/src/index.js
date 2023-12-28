@@ -7,6 +7,7 @@ import Meditation from "./pages/meditation";
 import About from "./pages/about";
 import { ToastContainer } from "react-toastify";
 import Register from "./pages/register";
+import Login from "./pages/login";
 export default function Router() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
@@ -16,6 +17,7 @@ export default function Router() {
         <Route path='events' element={<Events />} />
         <Route path='meditation' element={<Meditation />} />
         <Route path='register' element={<Register />} />
+        <Route path='login' element={<Login />} />
       </Routes>
       <ToastContainer />
     </BrowserRouter>

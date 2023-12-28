@@ -77,8 +77,9 @@ a{
     font-family: var(--primary-font);
     background-color: var(--highlight-color);
     padding: 1.6rem;
-    border-radius: 0.5rem;
+    border-radius: 5rem;
     list-style-type: none;
+    border: 2px solid black;
 }
 .login:hover{
     font-weight: bolder;

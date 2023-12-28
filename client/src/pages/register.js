@@ -2,12 +2,14 @@ import { NavLink } from "react-router-dom";
 import "../styles/register.css";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import Popup from "reactjs-popup";
+import "reactjs-popup/dist/index.css";
 
 const Register = () => {
   const [avatar, setavatar] = useState("");
   const [registerPassword, setRegisterPassword] = useState("");
   const [registerEmail, setRegisterEmail] = useState("");
-
+  const [registerSucessful, setRegisterSuccessful] = useState(false);
   const showRegisterSuccess = () => {
     toast.success("Account Created Successfully", {
       position: toast.POSITION.TOP_RIGHT,
@@ -41,6 +43,7 @@ const Register = () => {
         });
       } else {
         showRegisterSuccess();
+        setRegisterSuccessful(true);
       }
     } catch (error) {
       console.log("Error", error.message);
@@ -57,6 +60,29 @@ const Register = () => {
         <p>
           Empowering your mind through <span>mindfulness.</span>
         </p>
+        <Popup
+          trigger={
+            <button className='reg-button'> Registration Guidelines </button>
+          }
+          position='right center'
+          contentStyle={{ width: "420px", height: "140px" }}>
+          <ul className='rules-list'>
+            <li>
+              {" "}
+              Password must be greater than 6 characters and must contain at
+              least one number.
+            </li>
+            <br />
+            <li>
+              {" "}
+              Enter a valid email id. The domain appears to the right of the{" "}
+              <span>@ </span>
+              symbol. For example, in the address <span>
+                example@mail.com
+              </span>{" "}
+            </li>
+          </ul>
+        </Popup>
       </div>
 
       {/* Welcome Back Header */}
@@ -103,9 +129,18 @@ const Register = () => {
 
       {/* Other Signup Methods */}
       <div className='other-login'>
-        <NavLink to='/'>
+        {registerSucessful && (
+          <div className='successful-register'>
+            <NavLink to='/login'>
+              <h3>
+                You are successfully registered. Go to <span>Login Page. </span>
+              </h3>
+            </NavLink>
+          </div>
+        )}
+        <NavLink to='/login'>
           <h3>
-            Back to <span>Home Page</span>
+            Already a member of purple audience? Go to <span>Login Page.</span>
           </h3>
         </NavLink>
       </div>
