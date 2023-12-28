@@ -12,7 +12,7 @@ For the database functionality, you can download the files locally on your syste
 
 **Step 1:** Install Necessary Packages
 ```
-npm install mongoose cors express nodemon axios
+npm install mongoose cors express nodemon axios reactjs-popup
 ```
 **Step 2:** Install MongoDB as a Service on your System.
 
