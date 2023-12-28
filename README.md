@@ -7,7 +7,8 @@ Purple Audience is a captivating mental health awareness website that aims to cr
 
 This website is hosted on https://purple-audience.vercel.app/ as a front-end web application.
 
-For the database, you can download the files locally on your system.
+For the database functionality, you can download the files locally on your system.
+**API are not hosted**
 
 **Step 1:** Install Necessary Packages
 ```
