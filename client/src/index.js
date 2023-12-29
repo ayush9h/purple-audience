@@ -8,20 +8,26 @@ import About from "./pages/about";
 import { ToastContainer } from "react-toastify";
 import Register from "./pages/register";
 import Login from "./pages/login";
-export default function Router() {
+
+import { AuthProvider } from "./contextAuth.js";
+
+export default function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <Routes>
-        <Route path='/' element={<Home />}></Route>
-        <Route path='about' element={<About />} />
-        <Route path='events' element={<Events />} />
-        <Route path='meditation' element={<Meditation />} />
-        <Route path='register' element={<Register />} />
-        <Route path='login' element={<Login />} />
-      </Routes>
-      <ToastContainer />
-    </BrowserRouter>
+    <AuthProvider>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='about' element={<About />} />
+          <Route path='events' element={<Events />} />
+          <Route path='meditation' element={<Meditation />} />
+          <Route path='register' element={<Register />} />
+          <Route path='login' element={<Login />} />
+        </Routes>
+        <ToastContainer />
+      </BrowserRouter>
+    </AuthProvider>
   );
 }
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Router />);
+root.render(<App />);

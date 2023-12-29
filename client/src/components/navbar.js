@@ -1,11 +1,19 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "../styles/navbar.css";
+import { useAuth } from "../contextAuth";
+
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
+  const { user, logout } = useAuth();
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleUserMenu = () => {
+    setIsUserMenuOpen(!isUserMenuOpen);
   };
 
   return (
@@ -40,12 +48,35 @@ const Navbar = () => {
             </li>
           </ul>
         </ul>
-        <li className='login'>
-          <NavLink to='/register'>Register Yourself</NavLink>
-        </li>
+        {user ? (
+          <div className='user-dropdown'>
+            <div className='user-greeting' onClick={toggleUserMenu}>
+              {`User: ${user.username}`}
+              {"   "}
+              <i className='fa-solid fa-angle-down'></i>
+            </div>
+            {isUserMenuOpen && (
+              <ul className='user-dropdown-menu'>
+                <li>
+                  Your Profile
+                  <span>
+                    {" "}
+                    <br />
+                    (Coming Soon)
+                  </span>
+                </li>
+                <li onClick={logout}>Logout</li>
+              </ul>
+            )}
+          </div>
+        ) : (
+          <li className='login'>
+            <NavLink to='/register'>Register Yourself</NavLink>
+          </li>
+        )}
 
         <div className='menu-toggle' onClick={toggleMenu}>
-          <i class='fa-solid fa-bars'></i>
+          <i className='fa-solid fa-bars'></i>
         </div>
       </nav>
     </header>

@@ -2,10 +2,15 @@ import { NavLink } from "react-router-dom";
 import "../styles/login.css";
 import { useState } from "react";
 import { toast } from "react-toastify";
+
+import { useNavigate } from "react-router-dom";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import { useAuth } from "../contextAuth";
 
 const Login = () => {
+  const history = useNavigate();
+  const { login } = useAuth();
   const [loginEmail, setLoginEmail] = useState("");
   const [loginSuccessful, setLoginSuccessful] = useState(false);
   const showLoginSuccess = () => {
@@ -37,6 +42,8 @@ const Login = () => {
       } else {
         showLoginSuccess();
         setLoginSuccessful(true);
+        login({ username: loginEmail });
+        history.push("/");
       }
     } catch (error) {
       console.log("Error", error.message);

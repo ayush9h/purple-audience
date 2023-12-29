@@ -77,7 +77,7 @@ a{
     font-family: var(--primary-font);
     background-color: var(--highlight-color);
     padding: 1.6rem;
-    border-radius: 5rem;
+    border-radius: 0.5rem;
     list-style-type: none;
     border: 2px solid black;
 }
@@ -85,6 +85,65 @@ a{
     font-weight: bolder;
 }
 
+.user-greeting{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    background-color: var(--highlight-color);
+    padding: 1.6rem;
+    border-radius: 5rem;
+    list-style-type: none;
+    border: 2px solid black;
+}
+.logout{
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    background-color: var(--highlight-color);
+    padding: 1.6rem;
+    border-radius: 5rem;
+    list-style-type: none;
+    border: 2px solid black;
+}
+
+.user-dropdown {
+    position: relative;
+  }
+  
+  .user-greeting {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    background-color: var(--highlight-color);
+    padding: 1.6rem;
+    border-radius: 0.5rem;
+    list-style-type: none;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .user-dropdown-menu {
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--accent-color);
+    border: 2px solid black;
+    border-radius: 0.5rem;
+    list-style-type: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 100;
+    margin-top: 1rem;
+  }
+  
+  .user-dropdown-menu li {
+    font-size: 1.6rem;
+    font-family: var(--primary-font);
+    padding: 1.6rem 1.6rem;
+  }
+  .user-dropdown li:hover{
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid black
+  }
 @media screen and (max-width:800px) {
     .navigation-menu .logo{
         font-size: 1.5rem;
