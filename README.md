@@ -8,7 +8,7 @@ Purple Audience is a captivating mental health awareness website that aims to cr
 This website is hosted on https://purple-audience.vercel.app/ as a front-end web application.
 
 For the database functionality, you can download the files locally on your system.
-**API are not hosted**
+**API's are not hosted**
 
 **Step 1:** Install Necessary Packages
 ```
@@ -32,7 +32,7 @@ npm start
 
 **Step 6:** Open MongoDB Compass on your system and click on connect button.
 
-**Step 7:** Fill the form in newsletter section and the register yourself form. You should be able to see the data on Compass and corresponding toast icon.
+**Step 7:** Register, Login, and Logout functionality included in ContextAPI in React.
 
 
 ## Tech Stack
