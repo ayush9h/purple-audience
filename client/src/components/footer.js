@@ -14,7 +14,6 @@ const Footer = () => {
         </p>
         <p className='footer-company-name'>
           <strong>
-            Developed By: Ayush Kumar, Aditya Choudhary and Dharmanshu Singh
           </strong>
         </p>
       </div>
